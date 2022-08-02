@@ -24,6 +24,7 @@
     @include lg-min {
       min-width: 250px;
       height: 60px;
+
       font-size: 1.125rem;
     }
     @include lg-md {
@@ -38,6 +39,10 @@
 
   &--primary {
     height: 60px;
+
+    border: 2px solid $color-primary;
+    background-color: rgba($color-primary, 0.8);
+
     font-size: 1.125rem;
 
     @include sm-min {
@@ -46,9 +51,6 @@
     @include sm {
       width: 100%;
     }
-
-    border: 2px solid $color-primary;
-    background-color: rgba($color-primary, 0.8);
   }
 }
 
