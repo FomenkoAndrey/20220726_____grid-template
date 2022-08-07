@@ -12,7 +12,23 @@
 
   color: $color-light;
   background-color: $color-primary;
-  background-image: url(../img/img-header.png);
+
   background-position: center;
   background-size: cover;
+
+  //@media (max-resolution: 300dpi) {
+  //  background-image: url(../img/img-header.png);
+  //}
+  //@media (min-resolution: 301dpi) {
+  //  background-image: url(../img/img-header@2x.png);
+  //}
+
+  @media (min-width: 1921px) {
+    background-image: url(../img/img-header@2x.png);
+  }
+
+  @media (max-width: 1920px) {
+    background-image: url(../img/img-header.png);
+  }
+
 }
